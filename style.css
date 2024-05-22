@@ -1,0 +1,266 @@
+@font-face {
+    font-family: GraphikRegular;
+    src: url(./font/GraphikRegular.otf);
+}
+@font-face {
+    font-family: GraphikBold;
+    src: url(./font/GraphikBold.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: GraphikRegular;
+}
+header {
+    background-color: #122315;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    bottom: 100%;
+    z-index: 9999999;
+}
+
+header>img {
+    width: 100px;
+    cursor: pointer;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #f3ede4;
+    font-family: GraphikRegular;
+    font-size: 16px;
+    cursor: pointer;
+}
+header .btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.login-btn {
+    border-color: rgba(243, 240, 236, .3);
+    background-color: #122315;
+    color: #f3ede4;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
+    font-family: GraphikRegular;
+}
+.funding-btn {
+    background-color: #55dd4a;
+    color: #122315;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: GraphikRegular;
+    border-color: rgba(141, 141, 141, .3);
+}
+/*  main */
+
+
+#main {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+#page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #122315;
+    padding-top: 150px;
+}
+#page .heading1 {
+    font-size: 9.5vw;
+    text-align: center;
+    color: #f3ede4;
+    font-family: GraphikBold;
+    opacity: 0;
+}
+#page .heading2 {
+    font-size: 9.5vw;
+    text-align: center;
+    color: #55dd4a;
+    font-family: GraphikBold;
+    opacity: 0;
+}
+#page>p {
+    font-size: 18px;
+    text-align: center;
+    font-family: GraphikRegular;
+    color: #f3ede4;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+#page .imgDiv {
+    width: 100%;
+    height: 50vh;
+    background: url(./heroBg.svg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+/* page 2 */
+
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3ede4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#page2>h1 {
+    text-align: center;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: .8em;
+    font-family: GraphikBold;
+    width: auto;
+}
+#page2>p {
+    font-size: 18px;
+    text-align: center;
+    font-family: GraphikRegular;
+    line-height: 140%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#page2>img {
+    width: 150px;
+    height: 150px;
+    z-index: 9999;
+}
+#page2 .demo1 {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    opacity: 0;
+}
+#page2 .demo2 {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    opacity: 0;
+}
+#page2 .demo3 {
+    position: absolute;
+    bottom: 110px;
+    left: 100px;
+    opacity: 0;
+}
+#page2 .demo4 {
+    position: absolute;
+    bottom: 60px;
+    right: 160px;
+    opacity: 0;
+}
+#page2 .demo5 {
+    position: absolute;
+    bottom: 240px;
+    right: 40px;
+    opacity: 0;
+}
+
+
+/* Page 3 */
+
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3ede4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#page3 .left {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-family: GraphikRegular;
+}
+#page3 .left .top .num {
+    background-color: #55dd4a;
+    width: max-content;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#page3 .left .top h3 {
+    width: auto;
+    color: #122315;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: GraphikBold;
+    font-size: 4vw;
+    line-height: 85%;
+}
+#page3 .left>p {
+    font-size: 18px;
+}
+
+#page3 .right {
+    width: 50%;
+    height: auto;
+    font-family: GraphikRegular;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+#page3 .right .img {
+    width: 100%;
+    height: 55vh;
+    background: url(./img/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
